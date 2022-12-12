@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draup Visualization</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://s3.us-east-2.amazonaws.com/draupassets/icons/draup-favicon.ico">
+    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="bootstrap-glyphicons.css">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="poppins.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="normalize.js" defer></script> -->
+    <!-- <script src="main.js" defer></script>
+    <script src="serviceWorker.js" defer></script>
+    <script src="vendor.js" defer></script>
+    <script src="delighted.js" defer></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js" defer></script>
+    <script src="download.js" defer></script>
+</head>
+<body>
+    <div id="root" style="height: 100%">
+        <div class="draupapp-main-container" style="height: 100%">
+        <div class="draup-container-fluid container-fluid text-center page-main-container new-gray-background">
+            <div class="main-scrollable-div">
+                <div class="page-viewport">
+                    <div class="notifications-wrapper"></div>
+                    <div class="spacious-header-container compound-header">
+                        <nav expand="sm" bg="light" variant="light" class="draup-header elevation-sm navbar-fixed-top  navbar navbar-default">
+                            <div class="container-fluid">
+                                <a class="draup-logo-container navbar-brand" aria-label="draup-logo" href="https://platform.draup.com/draup/home?time=1670574039828">
+                                    <span class="hide-on-hover"><img src="draup_grey_icon.svg" alt="draup blue"></span>
+                                    <span class="show-on-hover"><img src="draup_blue_icon.svg" alt="draup blue"></span>
+                                </a>
+                                <h1 style="font-size: 0px; margin: 0px;">Draup Application</h1>
+                                <div class="navbar-collapse collapse" id="responsive-navbar-nav">
+                                    <select class="dropdown-menu-container app-header dropdown" name="selection" id="selection">
+                                        <option value="sales">Sales</option>
+                                        <option value="talents">Talents</option>
+                                      </select>
+                                    <ul id="tabs" class="mr-auto left-navigation nav navbar-nav sales">
+                                        <li class="active" id="tab" data-index="0">
+                                            <a href="#">Industry</a>
+                                        </li>
+                                        <li class="inactive" id="tab" data-index="1">
+                                            <a href="#">Accounts</a>
+                                        </li>
+                                        <li class="inactive" id="tab" data-index="2">
+                                            <a href="#">Buyers</a>
+                                        </li>
+                                        <li class="inactive" id="tab" data-index="3">
+                                            <a href="#">Cost Modeling</a>
+                                        </li>
+                                        <li class="inactive" id="tab" data-index="4">
+                                            <a href="#">Braindesk</a>
+                                        </li>
+                                        </li>
+                                        <li class="inactive" id="tab" data-index="7">
+                                            <a href="#">Apps</a>
+                                        </li>
+                                    </ul>
+                                    <ul id="tabs" class="mr-auto left-navigation nav navbar-nav talent">
+                                        <li class="active" id="tab" data-index="0">
+                                            <a href="#">Overall Usage</a>
+                                        </li>
+                                        <li class="inactive" id="tab" data-index="1">
+                                            <a href="#">Workforce Planning</a>
+                                        </li>
+                                        <li class="inactive" id="tab" data-index="2">
+                                            <a href="#">Peer Intelligence</a>
+                                        </li>
+                                        <li class="inactive" id="tab" data-index="3">
+                                            <a href="#">Recruitment</a>
+                                        </li>
+                                        <li class="inactive" id="tab" data-index="4">
+                                            <a href="#">Reskilling</a>
+                                        </li>
+                                        <li class="inactive" id="tab" data-index="5">
+                                            <a href="#">University Hiring</a>
+                                        </li>
+                                        <li class="inactive" id="tab" data-index="6">
+                                            <a href="#">Braindesk</a>
+                                        </li>
+                                        <li class="inactive" id="tab" data-index="7">
+                                            <a href="#">Apps</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="pull-right right-navigation nav navbar-nav" width="1250" height="52">
+                                        <div class="new-icon-wrapper border-radius-sm default primary interactive undefined" tabindex="0">
+                                            <i class="icon-svg large" style="background-image: url(&quot;https://s3.us-east-2.amazonaws.com/draupassets/fundamentals/Search.svg&quot;);"></i>
+                                        </div>
+                                        <div class="notes-header-icon">
+                                            <div class="tooltip-container ">
+                                                <div class="new-icon-wrapper border-radius-sm default primary interactive undefined" tabindex="0">
+                                                    <i class="icon-svg large" style="background-image: url(&quot;https://s3.us-east-2.amazonaws.com/draupassets/fundamentals/Note.svg&quot;);"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="new-icon-wrapper border-radius-sm default primary interactive undefined" tabindex="0" id="btn">
+                                            <i class="icon-svg large">
+                                                <img src="download.svg" alt="download">
+                                            </i>
+                                        </div>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- <div class="dl">
+            
+                            <div id="link" data-id = "0">Download CSV</div>
+                            <div id="link" data-id = "1">Download File</div>
+
+                    </div> -->
+                    <div class="dl">
+                        <span class="cross-container" id="close-btn"><span class="css-cross"></span></span>
+                        <button class="default-blue-button samll" id="d_btn1" data-index = '0'>Download Data</button>
+                        <button class="default-blue-button samll" id="d_btn2" data-index = '1'>Download Report</button>
+                    </div>
+                    <main>
+                        <div class="loadedContent">
+                            <div class="page-container">
+                                <div class="academia-holder">
+                                    <div class="universe-container" style="position: relative; height: calc(100vh - 70px); overflow: hidden; font-family: Poppins; margin: 0px 10px 10px; padding-top: 15px;">
+                                        <div id = "chart" style="float: left; height: 100%; width: 100%;">
+                                            <div width="100%" height="100%" style="display: flex; align-items: center; justify-content: center;"><h3>Sales Comming Soon...</h3></div>
+                                            <!-- <iframe title="Sample Analysis" width="100%" height="100%" src="https://app.powerbi.com/reportEmbed?reportId=9232d87e-5cfb-4faa-9996-c7f5ce924396&autoAuth=true&ctid=0bf964fe-8dc3-417e-b765-c6aae6c8dfce" frameborder="0" allowFullScreen="true"></iframe> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
