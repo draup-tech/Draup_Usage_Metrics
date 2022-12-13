@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="poppins.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="style.css">
-    <!-- <script src="normalize.js" defer></script> -->
-    <!-- <script src="main.js" defer></script>
-    <script src="serviceWorker.js" defer></script>
-    <script src="vendor.js" defer></script>
-    <script src="delighted.js" defer></script> -->
+    <script src="js/normalize.js" defer></script>
+    <!-- <script src="js/main.js" defer></script> -->
+    <!-- <script src="js/serviceWorker.js" defer></script>
+    <script src="js/vendor.js" defer></script>
+    <script src="js/delighted.js" defer></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js" defer></script>
     <script src="download.js" defer></script>
@@ -31,7 +31,12 @@
                     <div class="spacious-header-container compound-header">
                         <nav expand="sm" bg="light" variant="light" class="draup-header elevation-sm navbar-fixed-top  navbar navbar-default">
                             <div class="container-fluid">
-                                <a class="draup-logo-container navbar-brand" aria-label="draup-logo" href="https://platform.draup.com/draup/home?time=1670574039828">
+                                <a class="draup-logo-container navbar-brand" aria-label="draup-logo" href="#home" onclick=reload_page()>
+                                    <script>
+                                        function reload_page() {
+                                            location.reload();
+                                        }
+                                    </script>
                                     <span class="hide-on-hover"><img src="draup_grey_icon.svg" alt="draup blue"></span>
                                     <span class="show-on-hover"><img src="draup_blue_icon.svg" alt="draup blue"></span>
                                 </a>
@@ -39,7 +44,7 @@
                                 <div class="navbar-collapse collapse" id="responsive-navbar-nav">
                                     <select class="dropdown-menu-container app-header dropdown" name="selection" id="selection">
                                         <option value="sales">Sales</option>
-                                        <option value="talents">Talents</option>
+                                        <option value="talents">Talent</option>
                                       </select>
                                     <ul id="tabs" class="mr-auto left-navigation nav navbar-nav sales">
                                         <li class="active" id="tab" data-index="0">
