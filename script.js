@@ -11,14 +11,14 @@ sales = document.querySelector('.sales');
 talent = document.querySelector('.talent');
 
 charts = [
-    '<iframe title="Draup_Talent_OverAll Usage_12_12_2022 (1)" width="100%" height="100%" src="https://app.powerbi.com/reportEmbed?reportId=4d0341c2-b61c-46ec-bd93-4d832211f9b1&autoAuth=true&ctid=0bf964fe-8dc3-417e-b765-c6aae6c8dfce" frameborder="0" allowFullScreen="true"></iframe>',
-    '<iframe title="Draup_Talent_Workforce Planning_12_12_2022 (1)" width="100%" height="100%" src="https://app.powerbi.com/reportEmbed?reportId=1d0468fc-a52b-4bbc-9c24-74be0e1baec9&autoAuth=true&ctid=0bf964fe-8dc3-417e-b765-c6aae6c8dfce" frameborder="0" allowFullScreen="true"></iframe>',
+    '<iframe title="Draup_Talent_OverAll Usage_13_12_2022" width="100%" height="100%" src="https://app.powerbi.com/reportEmbed?reportId=0e5d6597-574b-4a0c-9fd4-d8ceb567d864&autoAuth=true&ctid=0bf964fe-8dc3-417e-b765-c6aae6c8dfce" frameborder="0" allowFullScreen="true"></iframe>',
+    '<iframe title="Draup_Talent_Workforce Planning_13_12_2022" width="100%" height="100%" src="https://app.powerbi.com/reportEmbed?reportId=1060dc8c-38e5-4948-becd-7e668f110687&autoAuth=true&ctid=0bf964fe-8dc3-417e-b765-c6aae6c8dfce" frameborder="0" allowFullScreen="true"></iframe>',
     '<h3>Peer Intelligence Coming soon...</h3>',
-    '<iframe title="Draup_Talent_Diversity Navigator_12_12_2022" width="100%" height="100%" src="https://app.powerbi.com/reportEmbed?reportId=ee20c603-3635-48b3-9f93-ba233e39c106&autoAuth=true&ctid=0bf964fe-8dc3-417e-b765-c6aae6c8dfce" frameborder="0" allowFullScreen="true"></iframe>',
-    '<iframe title="Draup_Talent_Reskilling_12_12_2022" width="100%" height="100%" src="https://app.powerbi.com/reportEmbed?reportId=6177714f-7878-407b-9b7f-41cc23126ef7&autoAuth=true&ctid=0bf964fe-8dc3-417e-b765-c6aae6c8dfce" frameborder="0" allowFullScreen="true"></iframe>',
-    '<iframe title="Draup_Talent_University Hiring_12_12_2022 (1)" width="100%" height="100%" src="https://app.powerbi.com/reportEmbed?reportId=0b4eb850-cf3a-4df5-983b-14a1e97b4e9a&autoAuth=true&ctid=0bf964fe-8dc3-417e-b765-c6aae6c8dfce" frameborder="0" allowFullScreen="true"></iframe>',
-    '<iframe title="Draup_Talent_Braindesk_12_12_2022 (1)" width="100%" height="100%" src="https://app.powerbi.com/reportEmbed?reportId=7aa7fb03-42eb-4d73-8696-beb768153b72&autoAuth=true&ctid=0bf964fe-8dc3-417e-b765-c6aae6c8dfce" frameborder="0" allowFullScreen="true"></iframe>',
-    '<iframe title="Draup_Talent_Apps_12_12_2022 (1)" width="100%" height="100%" src="https://app.powerbi.com/reportEmbed?reportId=9b96f677-df6e-4788-a3e3-ff4e5cff56ad&autoAuth=true&ctid=0bf964fe-8dc3-417e-b765-c6aae6c8dfce" frameborder="0" allowFullScreen="true"></iframe>'
+    '<iframe title="Draup_Talent_Recruitment_13_12_2022" width="100%" height="100%" src="https://app.powerbi.com/reportEmbed?reportId=8419457e-805b-484d-97dd-61873aa28f0d&autoAuth=true&ctid=0bf964fe-8dc3-417e-b765-c6aae6c8dfce" frameborder="0" allowFullScreen="true"></iframe>',
+    '<iframe title="Draup_Talent_Reskilling_13_12_2022" width="100%" height="100%" src="https://app.powerbi.com/reportEmbed?reportId=4deac5a9-5542-48cc-8c43-043cce8d33e7&autoAuth=true&ctid=0bf964fe-8dc3-417e-b765-c6aae6c8dfce" frameborder="0" allowFullScreen="true"></iframe>',
+    '<iframe title="Draup_Talent_University Hiring_13_12_2022" width="100%" height="100%" src="https://app.powerbi.com/reportEmbed?reportId=d6afff81-ec76-4a3b-83f1-8efd960da909&autoAuth=true&ctid=0bf964fe-8dc3-417e-b765-c6aae6c8dfce" frameborder="0" allowFullScreen="true"></iframe>',
+    '<iframe title="Draup_Talent_Braindesk_13_12_2022" width="100%" height="100%" src="https://app.powerbi.com/reportEmbed?reportId=ee30aa83-edec-4d0b-94c8-fbff6890b40f&autoAuth=true&ctid=0bf964fe-8dc3-417e-b765-c6aae6c8dfce" frameborder="0" allowFullScreen="true"></iframe>',
+    '<iframe title="Draup_Talent_Apps_13_12_2022" width="100%" height="100%" src="https://app.powerbi.com/reportEmbed?reportId=ee49ee27-8529-499a-8b81-25515c0a897f&autoAuth=true&ctid=0bf964fe-8dc3-417e-b765-c6aae6c8dfce" frameborder="0" allowFullScreen="true"></iframe>'
 ]
 
 if(selection.value == 'sales') {
